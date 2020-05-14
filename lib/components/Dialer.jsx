@@ -26,7 +26,7 @@ export default class Dialer extends React.Component
 		const state = this.state;
 		const props = this.props;
 		const settings = props.settings;
-
+		settings.uri = 'sip:'+ settings.display_name + '@' + settings.realm
 		return (
 			<div data-component='Dialer'>
 				<div className='userchip-container'>

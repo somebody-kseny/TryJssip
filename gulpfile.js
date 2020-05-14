@@ -253,9 +253,9 @@ gulp.task('watch', (done) =>
 	));
 
 	// Watch changes in JS files
-	gulp.watch([ 'gulpfile.js', 'lib/**/*.js', 'lib/**/*.jsx' ], gulp.series(
-		'lint'
-	));
+	// gulp.watch([ 'gulpfile.js', 'lib/**/*.js', 'lib/**/*.jsx' ], gulp.series(
+	// 	'lint'
+	// ));
 
 	done();
 });
@@ -263,7 +263,7 @@ gulp.task('watch', (done) =>
 gulp.task('prod', gulp.series(
 	'env:prod',
 	'clean',
-	'lint',
+	// 'lint',
 	'bundle',
 	'html',
 	'css',
@@ -273,7 +273,7 @@ gulp.task('prod', gulp.series(
 gulp.task('dev', gulp.series(
 	'env:dev',
 	'clean',
-	'lint',
+	// 'lint',
 	'bundle',
 	'html',
 	'css',
@@ -283,7 +283,7 @@ gulp.task('dev', gulp.series(
 gulp.task('live', gulp.series(
 	'env:dev',
 	'clean',
-	'lint',
+	// 'lint',
 	'bundle:watch',
 	'html',
 	'css',

@@ -351,8 +351,12 @@ export default class Phone extends React.Component
 		this.props.onExit();
 	}
 
-	handleOutgoingCall(uri)
+	handleOutgoingCall(_uri)
 	{
+		let uri = _uri;
+		if (_uri.toString().indexOf('sip:')<0) {
+			uri = 'sip:' + _uri + '@' + this.props.settings.realm;
+		}
 		logger.debug('handleOutgoingCall() [uri:"%s"]', uri);
 
 		const session = this._ua.call(uri,
@@ -360,13 +364,13 @@ export default class Phone extends React.Component
 				pcConfig         : this.props.settings.pcConfig || { iceServers: [] },
 				mediaConstraints :
 				{
-					audio : false,
+					audio : true,
 					video : false
 				},
 				rtcOfferConstraints :
 				{
-					offerToReceiveAudio : 1,
-					offerToReceiveVideo : 1
+					offerToReceiveAudio : true,
+					offerToReceiveVideo : false
 				}
 			});
 
