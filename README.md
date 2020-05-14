@@ -43,7 +43,7 @@ Check the commented code in the [index.html](./index.html) and fill it as needed
 
 ## Author
 
-Iñaki Baz Castillo ([@ibc](https://github.com/ibc/) at Github)
+Iñaki Baz Castillo ([@Talbot3](https://github.com/Talbot3/) at Github)
 
 
 ## License
