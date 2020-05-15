@@ -4,7 +4,7 @@ import HangUpIcon from 'material-ui/svg-icons/communication/call-end';
 import PauseIcon from 'material-ui/svg-icons/av/pause-circle-outline';
 import ResumeIcon from 'material-ui/svg-icons/av/play-circle-outline';
 import classnames from 'classnames';
-import JsSIP from 'jssip';
+import JsSIP from '../sip';
 import Logger from '../Logger';
 import TransitionAppear from './TransitionAppear';
 

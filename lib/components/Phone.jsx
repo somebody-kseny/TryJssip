@@ -5,7 +5,7 @@ import IconMenu from 'material-ui/IconMenu';
 import MenuItem from 'material-ui/MenuItem';
 import IconButton from 'material-ui/IconButton/IconButton';
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
-import JsSIP from 'jssip';
+import JsSIP from '../sip';
 import UrlParse from 'url-parse';
 import Logger from '../Logger';
 import audioPlayer from '../audioPlayer';
