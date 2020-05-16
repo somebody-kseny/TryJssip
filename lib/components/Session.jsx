@@ -155,6 +155,11 @@ export default class Session extends React.Component
 			});
 		}
 
+		session.on('icecandidate', ({candidate, ready})=> {
+			console.log('receive candidate', candidate);
+			ready();
+		})
+
 		session.on('progress', (data) =>
 		{
 			if (!this._mounted)

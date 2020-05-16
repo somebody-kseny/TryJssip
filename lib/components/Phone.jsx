@@ -17,7 +17,7 @@ import Incoming from './Incoming';
 
 // TODO: For testing.
 window.jssip = JsSIP;
-
+JsSIP.debug("JsSIP:*");
 const callstatsjssip = window.callstatsjssip;
 
 const logger = new Logger('Phone');
