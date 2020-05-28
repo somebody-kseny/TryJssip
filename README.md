@@ -19,6 +19,8 @@ $ npm install
 
 ```bash
 $ npm install -g gulp-cli
+
+gulp && gulp openbrowser
 ```
 
 * Build the app (check the [gulpfile](./gulpfile.js) file for details):
